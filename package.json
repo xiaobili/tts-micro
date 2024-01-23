@@ -3,7 +3,7 @@
   "name": "tts-micro",
   "title": "tts-micro",
   "description": "text to tts speech",
-  "icon": "command-icon.png",
+  "icon": "audio-fill.png",
   "author": "xiaobili",
   "owner": "billyjr",
   "categories": [
@@ -16,11 +16,139 @@
       "title": "tts-micro",
       "subtitle": "tts",
       "description": "create tts speech",
-      "mode": "view"
+      "mode": "no-view",
+      "preferences": [
+        {
+          "data": [
+            {
+              "value": "zh-HK-HiuGaaiNeural",
+              "title": "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)"
+            },
+            {
+              "value": "zh-HK-HiuMaanNeural",
+              "title": "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)"
+            },
+            {
+              "value": "zh-HK-WanLungNeural",
+              "title": "Microsoft WanLung Online (Natural) - Chinese (Hong Kong)"
+            },
+            {
+              "value": "zh-CN-XiaoxiaoNeural",
+              "title": "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-XiaoyiNeural",
+              "title": "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-YunjianNeural",
+              "title": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-YunxiNeural",
+              "title": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-YunxiaNeural",
+              "title": "Microsoft Yunxia Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-YunyangNeural",
+              "title": "Microsoft Yunyang Online (Natural) - Chinese (Mainland)"
+            },
+            {
+              "value": "zh-CN-liaoning-XiaobeiNeural",
+              "title": "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)"
+            },
+            {
+              "value": "zh-TW-HsiaoChenNeural",
+              "title": "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)"
+            },
+            {
+              "value": "zh-TW-YunJheNeural",
+              "title": "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)"
+            },
+            {
+              "value": "zh-TW-HsiaoYuNeural",
+              "title": "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwan)"
+            },
+            {
+              "value": "zh-CN-shaanxi-XiaoniNeural",
+              "title": "Microsoft Xiaoni Online (Natural) - Chinese (Xi'an)"
+            },
+            {
+              "value": "en-HK-SamNeural",
+              "title": "Microsoft Sam Online (Natural) - English (Hong Kong)"
+            },
+            {
+              "value": "en-US-AvaNeural",
+              "title": "Microsoft Ava Online (Natural) - English (United States)"
+            },
+            {
+              "value": "en-US-AndrewNeural",
+              "title": "Microsoft Andrew Online (Natural) - English (United States)"
+            }
+          ],
+          "description": "语音名称，支持中文、英文",
+          "name": "voice",
+          "title": "Voice",
+          "type": "dropdown",
+          "defaultValue": "zh-CN-XiaoxiaoNeural",
+          "default": "zh-CN-XiaoxiaoNeural",
+          "required": false
+        },
+        {
+          "description": "语音 Rate, 介于 0 到 100 之间",
+          "name": "rate",
+          "title": "Rate",
+          "type": "textfield",
+          "defaultValue": 0,
+          "default": "0",
+          "required": false
+        },
+        {
+          "description": "语音 Pitch, 介于 0 到 100 之间",
+          "name": "pitch",
+          "title": "Pitch",
+          "type": "textfield",
+          "defaultValue": 0,
+          "default": "0",
+          "required": false
+        },
+        {
+          "description": "服务器地址，不填写则使用默认地址",
+          "name": "server",
+          "title": "Server",
+          "type": "textfield",
+          "defaultValue": "http://localhost:5000",
+          "default": "http://localhost:5000",
+          "required": false
+        },
+        {
+          "description": "文件保存路径，不填写则使用默认路径",
+          "name": "directory",
+          "title": "Directory",
+          "type": "directory",
+          "defaultValue": "~/Downloads",
+          "default": "~/Downloads",
+          "required": true
+        },
+        {
+          "description": "是否打开文件夹，不填写则使用默认值",
+          "label": "是否打开文件夹",
+          "name": "open",
+          "title": "Open",
+          "type": "checkbox",
+          "defaultValue": false,
+          "default": false,
+          "required": false
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.65.1"
+    "@raycast/api": "^1.65.1",
+    "axios": "^1.6.5"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
