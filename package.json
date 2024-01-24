@@ -13,7 +13,7 @@
   "commands": [
     {
       "name": "tts-micro",
-      "title": "tts-micro",
+      "title": "TTS-Micro",
       "subtitle": "tts",
       "description": "create tts speech",
       "mode": "no-view",
