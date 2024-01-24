@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "tts-micro",
-  "title": "tts-micro",
+  "title": "TTS-Micro",
   "description": "text to tts speech",
   "icon": "audio-fill.png",
   "author": "xiaobili",
@@ -95,24 +95,6 @@
           "type": "dropdown",
           "defaultValue": "zh-CN-XiaoxiaoNeural",
           "default": "zh-CN-XiaoxiaoNeural",
-          "required": false
-        },
-        {
-          "description": "语音 Rate, 介于 0 到 100 之间",
-          "name": "rate",
-          "title": "Rate",
-          "type": "textfield",
-          "defaultValue": 0,
-          "default": "0",
-          "required": false
-        },
-        {
-          "description": "语音 Pitch, 介于 0 到 100 之间",
-          "name": "pitch",
-          "title": "Pitch",
-          "type": "textfield",
-          "defaultValue": 0,
-          "default": "0",
           "required": false
         },
         {
