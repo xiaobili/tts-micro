@@ -3,6 +3,7 @@ import axios from "axios";
 import { join } from "path";
 import { getNowTime } from "./date";
 import fs from "fs";
+import { Base64 } from "js-base64";
 
 export default async () => {
   let selectedText: string;
@@ -17,12 +18,10 @@ export default async () => {
   // 开始合成
   await showToast(Toast.Style.Animated, "开始合成");
 
-  const { voice, rate, pitch, server, directory, open } = getPreferenceValues();
+  const { voice, server, directory, open } = getPreferenceValues();
   const tts = {
-    text: selectedText,
+    text: Base64.encode(selectedText),
     voice: voice,
-    rate: "+" + rate + "%",
-    pitch: "+" + pitch + "Hz",
   };
 
   console.log("tts", tts);

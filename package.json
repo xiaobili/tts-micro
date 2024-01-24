@@ -148,7 +148,8 @@
   ],
   "dependencies": {
     "@raycast/api": "^1.65.1",
-    "axios": "^1.6.5"
+    "axios": "^1.6.5",
+    "js-base64": "^3.7.6"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
