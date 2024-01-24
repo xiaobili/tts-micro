@@ -1,4 +1,4 @@
-import { getSelectedText, showToast, getPreferenceValues, Toast, showHUD, showInFinder } from "@raycast/api";
+import { Clipboard, showToast, getPreferenceValues, Toast, showHUD, showInFinder } from "@raycast/api";
 import axios from "axios";
 import { join } from "path";
 import { getNowTime } from "./date";
@@ -6,10 +6,10 @@ import fs from "fs";
 import { Base64 } from "js-base64";
 
 export default async () => {
-  let selectedText: string;
+  let selectedText: string | undefined;
 
   try {
-    selectedText = await getSelectedText();
+    selectedText = await Clipboard.readText();
   } catch (error) {
     await showToast(Toast.Style.Failure, "请选中文字");
     return;
@@ -20,7 +20,7 @@ export default async () => {
 
   const { voice, server, directory, open } = getPreferenceValues();
   const tts = {
-    text: Base64.encode(selectedText),
+    text: Base64.encode(selectedText ? selectedText : ""),
     voice: voice,
   };
 
