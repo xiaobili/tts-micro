@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "tts-micro",
-  "title": "TTS-Micro",
+  "name": "tts",
+  "title": "TTS",
   "description": "text to tts speech",
   "icon": "audio-fill.png",
   "author": "xiaobili",
@@ -15,7 +15,7 @@
       "name": "tts-micro",
       "title": "TTS-Micro",
       "subtitle": "tts",
-      "description": "create tts speech",
+      "description": "create tts speech by microsoft",
       "mode": "no-view",
       "preferences": [
         {
@@ -114,6 +114,103 @@
           "defaultValue": "~/Downloads",
           "default": "~/Downloads",
           "required": true
+        },
+        {
+          "description": "是否打开文件夹，不填写则使用默认值",
+          "label": "是否打开文件夹",
+          "name": "open",
+          "title": "Open",
+          "type": "checkbox",
+          "defaultValue": false,
+          "default": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "tts-openai",
+      "title": "TTS-OpenAI",
+      "subtitle": "tts-openai",
+      "description": "create tts speech by openai",
+      "mode": "no-view",
+      "preferences": [
+        {
+          "description": "语音名称，支持中文、英文",
+          "name": "voice",
+          "title": "Voice",
+          "type": "dropdown",
+          "defaultValue": "alloy",
+          "default": "alloy",
+          "required": false,
+          "data": [
+            {
+              "value": "alloy",
+              "title": "Alloy"
+            },
+            {
+              "value": "echo",
+              "title": "Echo"
+            },
+            {
+              "value": "fable",
+              "title": "Fable"
+            },
+            {
+              "value": "onyx",
+              "title": "Onyx"
+            },
+            {
+              "value": "nova",
+              "title": "Nova"
+            },
+            {
+              "value": "shimmer",
+              "title": "Shimmer"
+            }
+          ]
+        },
+        {
+          "description": "服务器地址，不填写则使用默认地址",
+          "name": "server",
+          "title": "Server",
+          "type": "textfield",
+          "defaultValue": "https://openkey.cloud",
+          "default": "https://openkey.cloud",
+          "required": false
+        },
+        {
+          "description": "OpenAI API Key",
+          "name": "api_key",
+          "title": "API Key",
+          "type": "textfield",
+          "required": true
+        },
+        {
+          "description": "语音模式，默认为tts-1-hd",
+          "name": "mode",
+          "title": "Mode",
+          "type": "textfield",
+          "defaultValue": "tts-1-hd",
+          "default": "tts-1-hd",
+          "required": false
+        },
+        {
+          "description": "文件格式，默认为mp3",
+          "name": "format",
+          "title": "Format",
+          "type": "textfield",
+          "defaultValue": "mp3",
+          "default": "mp3",
+          "required": false
+        },
+        {
+          "description": "文件保存路径，不填写则使用默认路径",
+          "name": "directory",
+          "title": "Directory",
+          "type": "directory",
+          "defaultValue": "~/Downloads",
+          "default": "~/Downloads",
+          "required": false
         },
         {
           "description": "是否打开文件夹，不填写则使用默认值",

@@ -1,7 +1,7 @@
 /**
  * 获取当前时间，格式为 YYYY-MM-DD_HH-mm-ss
  */
-export function getNowTime() {
+function getNowTime() {
     const date = new Date();
     const year = date.getFullYear().toString();
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -11,3 +11,7 @@ export function getNowTime() {
     const second = date.getSeconds().toString().padStart(2, '0');
     return `${year}-${month}-${day}_${hour}-${minute}-${second}`;
 }
+
+// 导出
+export { getNowTime };
+
