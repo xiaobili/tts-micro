@@ -63,4 +63,5 @@ Copy the speech text you want to generate to the clipboard and run the command. 
 
 ## Screenshots
 
-![alt text](./assets/CleanShot%202024-02-02%20at%2010.55.51.png)
+![alt text](./assets/screenshot-01.png)
+![alt text](./assets//screenshot-02.png)

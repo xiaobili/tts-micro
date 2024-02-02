@@ -12,9 +12,9 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "tts-micro",
-      "title": "TTS-Micro",
-      "subtitle": "tts",
+      "name": "tts-microsoft",
+      "title": "TTS-Microsoft",
+      "subtitle": "tts-microsoft",
       "description": "create tts speech by microsoft",
       "mode": "no-view",
       "preferences": [
