@@ -1,3 +1,5 @@
+
+
 /**
  * 获取当前时间，格式为 YYYY-MM-DD_HH-mm-ss
  */
@@ -11,6 +13,7 @@ function getNowTime() {
     const second = date.getSeconds().toString().padStart(2, '0');
     return `${year}-${month}-${day}_${hour}-${minute}-${second}`;
 }
+
 
 // 导出
 export { getNowTime };
