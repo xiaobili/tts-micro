@@ -2,8 +2,7 @@ import { Clipboard, Toast, getPreferenceValues, showHUD, showInFinder, showToast
 import axios from "axios";
 import { getNowTime } from "./utils";
 import { join } from "path";
-import ffmpeg from "fluent-ffmpeg";
-
+import fs from "fs";
 export default async () => {
   let selectedText: string | undefined;
   try {
@@ -32,26 +31,11 @@ export default async () => {
   });
 
   const filename = `${getNowTime()}.${format}`;
-  //await fs.promises.writeFile(join(directory, filename), data.data);
+  await fs.promises.writeFile(join(directory, filename), data.data);
 
-  const command = ffmpeg(data.data);
-
-  command
-    .toFormat(format)
-    .audioBitrate("192k")
-    .audioChannels(2)
-    .audioFrequency(16000)
-    .on("error", async (err) => {
-      console.log("An error occurred: " + err.message);
-      await showToast(Toast.Style.Failure, "合成失败");
-      await showHUD("合成失败");
-    })
-    .on("end", async () => {
-      await showToast(Toast.Style.Success, "合成成功");
-      await showHUD("合成成功");
-      if (open) {
-        await showInFinder(join(directory, filename));
-      }
-    })
-    .save(join(directory, filename));
+  await showToast(Toast.Style.Success, "合成成功");
+  await showHUD("合成成功");
+  if (open) {
+    await showInFinder(join(directory, filename));
+  }
 };

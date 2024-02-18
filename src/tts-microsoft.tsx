@@ -2,8 +2,8 @@ import { Clipboard, showToast, getPreferenceValues, Toast, showHUD, showInFinder
 import axios from "axios";
 import { join } from "path";
 import { getNowTime } from "./utils";
+import fs from "fs";
 import { Base64 } from "js-base64";
-import ffmpeg from "fluent-ffmpeg";
 
 export default async () => {
   let selectedText: string | undefined;
@@ -31,27 +31,12 @@ export default async () => {
     responseType: "arraybuffer",
   });
 
-  const filename = `${getNowTime()}.wav`;
-  //await fs.promises.writeFile(join(directory, filename), data.data);
+  const filename = `${getNowTime()}.mp3`;
+  await fs.promises.writeFile(join(directory, filename), data.data);
 
-  const command = ffmpeg(data.data);
-
-  command
-    .toFormat("wav")
-    .audioBitrate("192k")
-    .audioChannels(2)
-    .audioFrequency(16000)
-    .on("error", async (err) => {
-      console.log("An error occurred: " + err.message);
-      await showToast(Toast.Style.Failure, "合成失败");
-      await showHUD("合成失败");
-    })
-    .on("end", async () => {
-      await showToast(Toast.Style.Success, "合成成功");
-      await showHUD("合成成功");
-      if (open) {
-        await showInFinder(join(directory, filename));
-      }
-    })
-    .save(join(directory, filename));
+  await showToast(Toast.Style.Success, "合成成功");
+  await showHUD("合成成功");
+  if (open) {
+    await showInFinder(join(directory, filename));
+  }
 };

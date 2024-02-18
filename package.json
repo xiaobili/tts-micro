@@ -228,12 +228,10 @@
   "dependencies": {
     "@raycast/api": "^1.66.0",
     "axios": "^1.6.7",
-    "fluent-ffmpeg": "^2.1.2",
     "js-base64": "^3.7.6"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.8",
-    "@types/fluent-ffmpeg": "^2.1.24",
     "@types/node": "20.11.6",
     "@types/react": "18.2.48",
     "eslint": "^8.56.0",
