@@ -1,7 +1,7 @@
 import { Clipboard, showToast, getPreferenceValues, Toast, showHUD, showInFinder } from "@raycast/api";
-import axios from "axios";
 import { join } from "path";
 import { getNowTime } from "./utils";
+import fetch from "node-fetch";
 import fs from "fs";
 import { Base64 } from "js-base64";
 
@@ -24,15 +24,20 @@ export default async () => {
     voice: voice,
   };
 
-  // console.log("tts", tts);
-  // console.log("server", server);
-
-  const data = await axios.post(server, tts, {
-    responseType: "arraybuffer",
+  const resp = await fetch(server, {
+    method: "POST",
+    body: JSON.stringify(tts),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
 
+  const data = await resp.arrayBuffer();
+
+  const buffer = Buffer.from(data);
+
   const filename = `${getNowTime()}.mp3`;
-  await fs.promises.writeFile(join(directory, filename), data.data);
+  await fs.promises.writeFile(join(directory, filename), buffer);
 
   await showToast(Toast.Style.Success, "合成成功");
   await showHUD("合成成功");

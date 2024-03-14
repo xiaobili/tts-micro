@@ -226,14 +226,14 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.66.0",
-    "axios": "^1.6.7",
-    "js-base64": "^3.7.6"
+    "@raycast/api": "^1.69.3",
+    "js-base64": "^3.7.7",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.8",
-    "@types/node": "20.11.6",
-    "@types/react": "18.2.48",
+    "@types/node": "20.11.27",
+    "@types/react": "18.2.66",
     "eslint": "^8.56.0",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3"
