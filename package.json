@@ -102,8 +102,8 @@
           "name": "server",
           "title": "Server",
           "type": "textfield",
-          "defaultValue": "http://localhost:5000/tts",
-          "default": "http://localhost:5000/tts",
+          "defaultValue": "http://192.168.5.145:5000/tts",
+          "default": "http://192.168.5.145:5000/tts",
           "required": false
         },
         {

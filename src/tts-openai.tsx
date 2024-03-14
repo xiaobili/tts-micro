@@ -29,6 +29,7 @@ export default async () => {
       Authorization: `Bearer ${api_key}`,
       "Content-Type": "application/json",
     },
+    port: 443,
   });
 
   const r = await data.arrayBuffer();
