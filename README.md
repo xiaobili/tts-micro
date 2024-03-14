@@ -1,6 +1,8 @@
 # tts
 
-text to tts speech
+## Introduction
+
+This is a raycast script to generate speech from text using the Microsoft Azure Text-to-Speech API or OpenAI API.
 
 ## Usage
 
