@@ -174,8 +174,8 @@
           "name": "server",
           "title": "Server",
           "type": "textfield",
-          "defaultValue": "https://openkey.cloud",
-          "default": "https://openkey.cloud",
+          "defaultValue": "https://openkey.cloud/v1/audio/transcriptions",
+          "default": "https://openkey.cloud/v1/audio/transcriptions",
           "required": false
         },
         {

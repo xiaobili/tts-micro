@@ -33,7 +33,6 @@ export default async () => {
   });
 
   const data = await resp.arrayBuffer();
-
   const buffer = Buffer.from(data);
 
   const filename = `${getNowTime()}.mp3`;
