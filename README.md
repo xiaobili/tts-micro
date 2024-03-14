@@ -53,8 +53,7 @@ Copy the speech text you want to generate to the clipboard and run the command. 
 >     server.serve_forever()
 > ```
 >
-> 
-
+>
 
 ### tts-openai
 
