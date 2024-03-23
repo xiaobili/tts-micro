@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "tts",
   "title": "TTS",
-  "description": "text to tts speech",
+  "description": "文本转语音",
   "icon": "audio-fill.png",
   "author": "xiaobili",
   "owner": "billyjr",
@@ -15,7 +15,7 @@
       "name": "tts-microsoft",
       "title": "TTS-Microsoft",
       "subtitle": "tts-microsoft",
-      "description": "create tts speech by microsoft",
+      "description": "微软 TTS 服务",
       "mode": "no-view",
       "preferences": [
         {
@@ -257,7 +257,7 @@
           ],
           "description": "日文语音，默认为 JennyNeural",
           "name": "voice_jp",
-          "title": "中文语音",
+          "title": "日文语音",
           "type": "dropdown",
           "defaultValue": "ja-JP-JennyNeural",
           "default": "ja-JP-JennyNeural",
@@ -300,7 +300,7 @@
           ],
           "description": "韩文语音，默认为 JennyNeural",
           "name": "voice_ko",
-          "title": "中文语音",
+          "title": "韩文语音",
           "type": "dropdown",
           "defaultValue": "ko-KR-JennyNeural",
           "default": "ko-KR-JennyNeural",
@@ -340,7 +340,7 @@
       "name": "tts-openai",
       "title": "TTS-OpenAI",
       "subtitle": "tts-openai",
-      "description": "create tts speech by openai",
+      "description": "OpenAI TTS 服务",
       "mode": "no-view",
       "preferences": [
         {
