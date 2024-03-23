@@ -4,6 +4,7 @@ import { getNowTime } from "./utils";
 import fetch from "node-fetch";
 import fs from "fs";
 import { Base64 } from "js-base64";
+import { franc } from "franc";
 
 export default async () => {
   let selectedText: string | undefined;
@@ -18,7 +19,25 @@ export default async () => {
   // 开始合成
   await showToast(Toast.Style.Animated, "开始合成");
 
-  const { voice, server, directory, open } = getPreferenceValues();
+  const { voice_cn, voice_us, voice_jp, voice_ko, server, directory, open } = getPreferenceValues();
+  const lang = franc(selectedText);
+  let voice = null;
+  switch (lang) {
+    case "cmn":
+      voice = voice_cn;
+      break;
+    case "eng":
+      voice = voice_us;
+      break;
+    case "jpn":
+      voice = voice_jp;
+      break;
+    case "kor":
+      voice = voice_ko;
+      break;
+    default:
+      voice = voice_cn;
+  }
   const tts = {
     text: Base64.encode(selectedText ? selectedText : ""),
     voice: voice,

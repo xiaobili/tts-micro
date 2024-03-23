@@ -21,80 +21,289 @@
         {
           "data": [
             {
-              "value": "zh-HK-HiuGaaiNeural",
-              "title": "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)"
+              "title": "晓晓 - zh-CN-XiaoxiaoNeural - Female",
+              "value": "zh-CN-XiaoxiaoNeural"
             },
             {
-              "value": "zh-HK-HiuMaanNeural",
-              "title": "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong)"
+              "title": "云扬 - zh-CN-YunyangNeural - Male",
+              "value": "zh-CN-YunyangNeural"
             },
             {
-              "value": "zh-HK-WanLungNeural",
-              "title": "Microsoft WanLung Online (Natural) - Chinese (Hong Kong)"
+              "title": "晓辰 - zh-CN-XiaochenNeural - Female",
+              "value": "zh-CN-XiaochenNeural"
             },
             {
-              "value": "zh-CN-XiaoxiaoNeural",
-              "title": "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)"
+              "title": "晓涵 - zh-CN-XiaohanNeural - Female",
+              "value": "zh-CN-XiaohanNeural"
             },
             {
-              "value": "zh-CN-XiaoyiNeural",
-              "title": "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)"
+              "title": "晓梦 - zh-CN-XiaomengNeural - Female",
+              "value": "zh-CN-XiaomengNeural"
             },
             {
-              "value": "zh-CN-YunjianNeural",
-              "title": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)"
+              "title": "晓墨 - zh-CN-XiaomoNeural - Female",
+              "value": "zh-CN-XiaomoNeural"
             },
             {
-              "value": "zh-CN-YunxiNeural",
-              "title": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)"
+              "title": "晓秋 - zh-CN-XiaoqiuNeural - Female",
+              "value": "zh-CN-XiaoqiuNeural"
             },
             {
-              "value": "zh-CN-YunxiaNeural",
-              "title": "Microsoft Yunxia Online (Natural) - Chinese (Mainland)"
+              "title": "晓睿 - zh-CN-XiaoruiNeural - Female",
+              "value": "zh-CN-XiaoruiNeural"
             },
             {
-              "value": "zh-CN-YunyangNeural",
-              "title": "Microsoft Yunyang Online (Natural) - Chinese (Mainland)"
+              "title": "晓双 - zh-CN-XiaoshuangNeural - Female",
+              "value": "zh-CN-XiaoshuangNeural"
             },
             {
-              "value": "zh-CN-liaoning-XiaobeiNeural",
-              "title": "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)"
+              "title": "晓萱 - zh-CN-XiaoxuanNeural - Female",
+              "value": "zh-CN-XiaoxuanNeural"
             },
             {
-              "value": "zh-TW-HsiaoChenNeural",
-              "title": "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)"
+              "title": "晓颜 - zh-CN-XiaoyanNeural - Female",
+              "value": "zh-CN-XiaoyanNeural"
             },
             {
-              "value": "zh-TW-YunJheNeural",
-              "title": "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)"
+              "title": "晓伊 - zh-CN-XiaoyiNeural - Female",
+              "value": "zh-CN-XiaoyiNeural"
             },
             {
-              "value": "zh-TW-HsiaoYuNeural",
-              "title": "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwan)"
+              "title": "晓悠 - zh-CN-XiaoyouNeural - Female",
+              "value": "zh-CN-XiaoyouNeural"
             },
             {
-              "value": "zh-CN-shaanxi-XiaoniNeural",
-              "title": "Microsoft Xiaoni Online (Natural) - Chinese (Xi'an)"
+              "title": "晓甄 - zh-CN-XiaozhenNeural - Female",
+              "value": "zh-CN-XiaozhenNeural"
             },
             {
-              "value": "en-HK-SamNeural",
-              "title": "Microsoft Sam Online (Natural) - English (Hong Kong)"
+              "title": "云枫 - zh-CN-YunfengNeural - Male",
+              "value": "zh-CN-YunfengNeural"
             },
             {
-              "value": "en-US-AvaNeural",
-              "title": "Microsoft Ava Online (Natural) - English (United States)"
+              "title": "云皓 - zh-CN-YunhaoNeural - Male",
+              "value": "zh-CN-YunhaoNeural"
             },
             {
-              "value": "en-US-AndrewNeural",
-              "title": "Microsoft Andrew Online (Natural) - English (United States)"
+              "title": "云健 - zh-CN-YunjianNeural - Male",
+              "value": "zh-CN-YunjianNeural"
+            },
+            {
+              "title": "云夏 - zh-CN-YunxiaNeural - Male",
+              "value": "zh-CN-YunxiaNeural"
+            },
+            {
+              "title": "云希 - zh-CN-YunxiNeural - Male",
+              "value": "zh-CN-YunxiNeural"
+            },
+            {
+              "title": "云野 - zh-CN-YunyeNeural - Male",
+              "value": "zh-CN-YunyeNeural"
+            },
+            {
+              "title": "云泽 - zh-CN-YunzeNeural - Male",
+              "value": "zh-CN-YunzeNeural"
             }
           ],
-          "description": "语音名称，支持中文、英文",
-          "name": "voice",
-          "title": "Voice",
+          "description": "中文语音，默认为 XiaoxiaoNeural",
+          "name": "voice_cn",
+          "title": "中文语音",
           "type": "dropdown",
           "defaultValue": "zh-CN-XiaoxiaoNeural",
           "default": "zh-CN-XiaoxiaoNeural",
+          "required": false
+        },
+        {
+          "data": [
+            {
+              "title": "Jenny - en-US-JennyNeural - Female",
+              "value": "en-US-JennyNeural"
+            },
+            {
+              "title": "Jenny Multilingual - en-US-JennyMultilingualNeural - Female",
+              "value": "en-US-JennyMultilingualNeural"
+            },
+            {
+              "title": "Guy - en-US-GuyNeural - Male",
+              "value": "en-US-GuyNeural"
+            },
+            {
+              "title": "Amber - en-US-AmberNeural - Female",
+              "value": "en-US-AmberNeural"
+            },
+            {
+              "title": "Ana - en-US-AnaNeural - Female",
+              "value": "en-US-AnaNeural"
+            },
+            {
+              "title": "Aria - en-US-AriaNeural - Female",
+              "value": "en-US-AriaNeural"
+            },
+            {
+              "title": "Ashley - en-US-AshleyNeural - Female",
+              "value": "en-US-AshleyNeural"
+            },
+            {
+              "title": "Brandon - en-US-BrandonNeural - Male",
+              "value": "en-US-BrandonNeural"
+            },
+            {
+              "title": "Christopher - en-US-ChristopherNeural - Male",
+              "value": "en-US-ChristopherNeural"
+            },
+            {
+              "title": "Cora - en-US-CoraNeural - Female",
+              "value": "en-US-CoraNeural"
+            },
+            {
+              "title": "Davis - en-US-DavisNeural - Male",
+              "value": "en-US-DavisNeural"
+            },
+            {
+              "title": "Elizabeth - en-US-ElizabethNeural - Female",
+              "value": "en-US-ElizabethNeural"
+            },
+            {
+              "title": "Eric - en-US-EricNeural - Male",
+              "value": "en-US-EricNeural"
+            },
+            {
+              "title": "Jacob - en-US-JacobNeural - Male",
+              "value": "en-US-JacobNeural"
+            },
+            {
+              "title": "Jane - en-US-JaneNeural - Female",
+              "value": "en-US-JaneNeural"
+            },
+            {
+              "title": "Jason - en-US-JasonNeural - Male",
+              "value": "en-US-JasonNeural"
+            },
+            {
+              "title": "Michelle - en-US-MichelleNeural - Female",
+              "value": "en-US-MichelleNeural"
+            },
+            {
+              "title": "Monica - en-US-MonicaNeural - Female",
+              "value": "en-US-MonicaNeural"
+            },
+            {
+              "title": "Nancy - en-US-NancyNeural - Female",
+              "value": "en-US-NancyNeural"
+            },
+            {
+              "title": "Sara - en-US-SaraNeural - Female",
+              "value": "en-US-SaraNeural"
+            },
+            {
+              "title": "Steffan - en-US-SteffanNeural - Male",
+              "value": "en-US-SteffanNeural"
+            },
+            {
+              "title": "Tony - en-US-TonyNeural - Male",
+              "value": "en-US-TonyNeural"
+            },
+            {
+              "title": "AIGenerate1 - en-US-AIGenerate1Neural - Male",
+              "value": "en-US-AIGenerate1Neural"
+            },
+            {
+              "title": "AIGenerate2 - en-US-AIGenerate2Neural - Female",
+              "value": "en-US-AIGenerate2Neural"
+            },
+            {
+              "title": "Roger - en-US-RogerNeural - Male",
+              "value": "en-US-RogerNeural"
+            }
+          ],
+          "description": "英文语音，默认为 JennyNeural",
+          "name": "voice_us",
+          "title": "英文语音",
+          "type": "dropdown",
+          "defaultValue": "en-US-JennyNeural",
+          "default": "en-US-JennyNeural",
+          "required": false
+        },
+        {
+          "data": [
+            {
+              "title": "七海 - ja-JP-NanamiNeural - Female",
+              "value": "ja-JP-NanamiNeural"
+            },
+            {
+              "title": "圭太 - ja-JP-KeitaNeural - Male",
+              "value": "ja-JP-KeitaNeural"
+            },
+            {
+              "title": "碧衣 - ja-JP-AoiNeural - Female",
+              "value": "ja-JP-AoiNeural"
+            },
+            {
+              "title": "大智 - ja-JP-DaichiNeural - Male",
+              "value": "ja-JP-DaichiNeural"
+            },
+            {
+              "title": "真夕 - ja-JP-MayuNeural - Female",
+              "value": "ja-JP-MayuNeural"
+            },
+            {
+              "title": "直紀 - ja-JP-NaokiNeural - Male",
+              "value": "ja-JP-NaokiNeural"
+            },
+            {
+              "title": "志織 - ja-JP-ShioriNeural - Female",
+              "value": "ja-JP-ShioriNeural"
+            }
+          ],
+          "description": "日文语音，默认为 JennyNeural",
+          "name": "voice_jp",
+          "title": "中文语音",
+          "type": "dropdown",
+          "defaultValue": "ja-JP-JennyNeural",
+          "default": "ja-JP-JennyNeural",
+          "required": false
+        },
+        {
+          "data": [
+            {
+              "title": "선히 - ko-KR-SunHiNeural - Female",
+              "value": "ko-KR-SunHiNeural"
+            },
+            {
+              "title": "인준 - ko-KR-InJoonNeural - Male",
+              "value": "ko-KR-InJoonNeural"
+            },
+            {
+              "title": "봉진 - ko-KR-BongJinNeural - Male",
+              "value": "ko-KR-BongJinNeural"
+            },
+            {
+              "title": "국민 - ko-KR-GookMinNeural - Male",
+              "value": "ko-KR-GookMinNeural"
+            },
+            {
+              "title": "지민 - ko-KR-JiMinNeural - Female",
+              "value": "ko-KR-JiMinNeural"
+            },
+            {
+              "title": "서현 - ko-KR-SeoHyeonNeural - Female",
+              "value": "ko-KR-SeoHyeonNeural"
+            },
+            {
+              "title": "순복 - ko-KR-SoonBokNeural - Female",
+              "value": "ko-KR-SoonBokNeural"
+            },
+            {
+              "title": "유진 - ko-KR-YuJinNeural - Female",
+              "value": "ko-KR-YuJinNeural"
+            }
+          ],
+          "description": "韩文语音，默认为 JennyNeural",
+          "name": "voice_ko",
+          "title": "中文语音",
+          "type": "dropdown",
+          "defaultValue": "ko-KR-JennyNeural",
+          "default": "ko-KR-JennyNeural",
           "required": false
         },
         {
@@ -227,6 +436,7 @@
   ],
   "dependencies": {
     "@raycast/api": "^1.69.3",
+    "franc": "^6.2.0",
     "js-base64": "^3.7.7",
     "node-fetch": "^3.3.2"
   },
