@@ -309,7 +309,7 @@
         {
           "description": "服务器地址，不填写则使用默认地址",
           "name": "server",
-          "title": "Server",
+          "title": "服务器地址",
           "type": "textfield",
           "defaultValue": "http://192.168.5.145:5000/tts",
           "default": "http://192.168.5.145:5000/tts",
@@ -318,7 +318,7 @@
         {
           "description": "文件保存路径，不填写则使用默认路径",
           "name": "directory",
-          "title": "Directory",
+          "title": "保存路径",
           "type": "directory",
           "defaultValue": "~/Downloads",
           "default": "~/Downloads",
@@ -326,9 +326,9 @@
         },
         {
           "description": "是否打开文件夹，不填写则使用默认值",
-          "label": "是否打开文件夹",
+          "label": "是",
           "name": "open",
-          "title": "Open",
+          "title": "打开文件夹",
           "type": "checkbox",
           "defaultValue": false,
           "default": false,
