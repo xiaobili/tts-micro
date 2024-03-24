@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "tts",
   "title": "TTS",
-  "description": "文本转语音",
+  "description": "文本转语音，使用 Microsoft TTS 服务",
   "icon": "audio-fill.png",
   "author": "xiaobili",
   "owner": "billyjr",
@@ -15,7 +15,7 @@
       "name": "tts-microsoft",
       "title": "TTS-Microsoft",
       "subtitle": "tts-microsoft",
-      "description": "微软 TTS 服务",
+      "description": "Microsoft TTS 服务",
       "mode": "no-view",
       "preferences": [
         {
@@ -255,12 +255,12 @@
               "value": "ja-JP-ShioriNeural"
             }
           ],
-          "description": "日文语音，默认为 JennyNeural",
+          "description": "日文语音，默认为 NanamiNeural",
           "name": "voice_jp",
           "title": "日文语音",
           "type": "dropdown",
-          "defaultValue": "ja-JP-JennyNeural",
-          "default": "ja-JP-JennyNeural",
+          "defaultValue": "ja-JP-NanamiNeural",
+          "default": "ja-JP-NanamiNeural",
           "required": false
         },
         {
@@ -298,12 +298,12 @@
               "value": "ko-KR-YuJinNeural"
             }
           ],
-          "description": "韩文语音，默认为 JennyNeural",
+          "description": "韩文语音，默认为 SunHiNeural",
           "name": "voice_ko",
           "title": "韩文语音",
           "type": "dropdown",
-          "defaultValue": "ko-KR-JennyNeural",
-          "default": "ko-KR-JennyNeural",
+          "defaultValue": "ko-KR-SunHiNeural",
+          "default": "ko-KR-SunHiNeural",
           "required": false
         },
         {
@@ -329,103 +329,6 @@
           "label": "是",
           "name": "open",
           "title": "打开文件夹",
-          "type": "checkbox",
-          "defaultValue": false,
-          "default": false,
-          "required": false
-        }
-      ]
-    },
-    {
-      "name": "tts-openai",
-      "title": "TTS-OpenAI",
-      "subtitle": "tts-openai",
-      "description": "OpenAI TTS 服务",
-      "mode": "no-view",
-      "preferences": [
-        {
-          "description": "语音名称，支持中文、英文",
-          "name": "voice",
-          "title": "Voice",
-          "type": "dropdown",
-          "defaultValue": "alloy",
-          "default": "alloy",
-          "required": false,
-          "data": [
-            {
-              "value": "alloy",
-              "title": "Alloy"
-            },
-            {
-              "value": "echo",
-              "title": "Echo"
-            },
-            {
-              "value": "fable",
-              "title": "Fable"
-            },
-            {
-              "value": "onyx",
-              "title": "Onyx"
-            },
-            {
-              "value": "nova",
-              "title": "Nova"
-            },
-            {
-              "value": "shimmer",
-              "title": "Shimmer"
-            }
-          ]
-        },
-        {
-          "description": "服务器地址，不填写则使用默认地址",
-          "name": "server",
-          "title": "Server",
-          "type": "textfield",
-          "defaultValue": "https://openkey.cloud/v1/audio/speech",
-          "default": "https://openkey.cloud/v1/audio/speech",
-          "required": false
-        },
-        {
-          "description": "OpenAI API Key",
-          "name": "api_key",
-          "title": "API Key",
-          "type": "textfield",
-          "required": true
-        },
-        {
-          "description": "语音模式，默认为tts-1-hd",
-          "name": "mode",
-          "title": "Mode",
-          "type": "textfield",
-          "defaultValue": "tts-1-hd",
-          "default": "tts-1-hd",
-          "required": false
-        },
-        {
-          "description": "文件格式，默认为mp3",
-          "name": "format",
-          "title": "Format",
-          "type": "textfield",
-          "defaultValue": "mp3",
-          "default": "mp3",
-          "required": false
-        },
-        {
-          "description": "文件保存路径，不填写则使用默认路径",
-          "name": "directory",
-          "title": "Directory",
-          "type": "directory",
-          "defaultValue": "~/Downloads",
-          "default": "~/Downloads",
-          "required": false
-        },
-        {
-          "description": "是否打开文件夹，不填写则使用默认值",
-          "label": "是否打开文件夹",
-          "name": "open",
-          "title": "Open",
           "type": "checkbox",
           "defaultValue": false,
           "default": false,
