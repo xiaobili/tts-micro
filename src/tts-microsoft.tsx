@@ -5,6 +5,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import { Base64 } from "js-base64";
 import { franc } from "franc";
+import { exec } from "child_process";
 
 export default async () => {
   let selectedText: string | undefined;
@@ -19,7 +20,7 @@ export default async () => {
   // 开始合成
   await showToast(Toast.Style.Animated, "开始合成");
 
-  const { voice_cn, voice_us, voice_jp, voice_ko, server, directory, open } = getPreferenceValues();
+  const { voice_cn, voice_us, voice_jp, voice_ko, server, directory, open, play } = getPreferenceValues();
   const lang = franc(selectedText);
   let voice = null;
   switch (lang) {
@@ -61,5 +62,8 @@ export default async () => {
   await showHUD("合成成功");
   if (open) {
     await showInFinder(join(directory, filename));
+  }
+  if (play) {
+    exec(`afplay ${join(directory, filename)}`);
   }
 };

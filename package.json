@@ -330,7 +330,15 @@
           "name": "open",
           "title": "打开文件夹",
           "type": "checkbox",
-          "defaultValue": false,
+          "default": false,
+          "required": false
+        },
+        {
+          "description": "是否播放音频，不填写则使用默认值",
+          "label": "是",
+          "name": "play",
+          "title": "是否播放音频",
+          "type": "checkbox",
           "default": false,
           "required": false
         }
